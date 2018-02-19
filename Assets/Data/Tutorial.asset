@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 331b128fb681451190ba643376e333b9, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  list:
+    data:
+    - VideoEvent: {fileID: 114593752194206180, guid: 44553e3baac1c3348a6627bc14dd7390,
+        type: 2}
+      Minutes: 1
+      Seconds: 7
+    - VideoEvent: {fileID: 114641198305127570, guid: ad884ce277c805e408f365a02ed2b099,
+        type: 2}
+      Minutes: 1
+      Seconds: 55
+    - VideoEvent: {fileID: 114516527457573384, guid: 7d336e38d99b97044a80ca73741a09d1,
+        type: 2}
+      Minutes: 2
+      Seconds: 3
