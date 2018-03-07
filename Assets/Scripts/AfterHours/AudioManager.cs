@@ -1,4 +1,5 @@
-﻿using Flusk;
+﻿using System;
+using Flusk;
 using UnityEngine;
 
 namespace AfterHours
@@ -6,6 +7,8 @@ namespace AfterHours
     public class AudioManager : Singleton<AudioManager>
     {
         private AudioSource[] sources;
+
+        public event Action<AudioClip> ClipPlayed;
 
         public void PlayClip(AudioClip clip)
         {
@@ -15,6 +18,10 @@ namespace AfterHours
             {
                 source.clip = clip;
                 source.Play();
+                if (ClipPlayed != null)
+                {
+                    ClipPlayed(clip);
+                }
             }
         }
 

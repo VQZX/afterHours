@@ -4,9 +4,9 @@ namespace Flusk
 {
     public class RepeatTimer : Timer
     {
-        public RepeatTimer(float time, Action completeAction = null, Action<float> updateAction = null) : base(time, completeAction, updateAction)
+        public RepeatTimer(float time, Action complete = null, Action<float> updateAction = null) : base(time, complete, updateAction)
         {
-            CompletionCompleteAction += Reset;
+            Complete = Reset;
         }
     }
 }

@@ -7,21 +7,21 @@ namespace Flusk
     {
         public float CompletionTime { get; protected set; }
 
-        public bool Complete { get; protected set; }
+        public bool Ended { get; protected set; }
 
-        public Action CompletionCompleteAction;
+        public Action Complete;
 
-        public Action<float> UpdateAction;
+        public Action<float> Update;
 
         public float CurrentTime { get; protected set; }
         
         public bool Enabled { get; private set; }
 
-        public Timer(float time, Action completeAction = null, Action<float> updateAction = null)
+        public Timer(float time, Action complete = null, Action<float> update = null)
         {
             CompletionTime = time;
-            CompletionCompleteAction = completeAction;
-            UpdateAction = updateAction;
+            Complete = complete;
+            Update = update;
             Enabled = true;
         }
 
@@ -32,20 +32,20 @@ namespace Flusk
                 return;
             }
             CurrentTime += deltaTime;
-            if (UpdateAction != null)
+            if (Update != null)
             {
-                UpdateAction(CurrentTime);
+                Update(CurrentTime);
             }
             if (CurrentTime < CompletionTime)
             {
                 return;
             }
-            if (CompletionCompleteAction == null)
+            if (Complete == null)
             {
                 return;
             }
-            CompletionCompleteAction();
-            Complete = true;
+            Complete();
+            Ended = true;
             Enabled = false;
         }
 
