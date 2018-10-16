@@ -87,10 +87,10 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -139,7 +139,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 6
     m_MaxSize: 75
-    m_Alignment: 4
+    m_Alignment: 1
     m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -160,14 +160,8 @@ MonoBehaviour:
   subtitleText: {fileID: 114572201819501116}
   subtitles:
     subtitles:
-    - subtitle: "I was pissed off. Every time I see a picture of myself looking prettier,
-        happier...brighter... just basically not me anymore, it reminds me about how
-        fucked up everything is now. This always happens I was just trying to complete
-        my already overdue assignment and then past Lilith happened. I say \u201Cpast\u201D
-        because she\u2019s obviously dead and also, just, agh, fuck Facebook and fuck
-        being 17. I didn\u2019t understand enough about my life back then to look
-        the way I feel now.My face is uncomfortably honest, making sure everything
-        I feel is there for anyone to see "
+    - subtitle: 'I was pissed off. Every time I see a picture of myself looking prettier,
+        happier...brighter... just basically not me anymore. '
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -178,10 +172,40 @@ MonoBehaviour:
           outSlope: 2
           tangentMode: 0
         - serializedVersion: 2
-          time: 0.4976487
-          value: 1.0008779
-          inSlope: 0.0662709
-          outSlope: 0.0662709
+          time: 0.49414292
+          value: 0.9971332
+          inSlope: 0.039500307
+          outSlope: 0.039500307
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 1
+          value: 1
+          inSlope: 0
+          outSlope: 0
+          tangentMode: 0
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 0
+    - subtitle: "it reminds me about how fucked up everything is now. This always
+        happens I was just trying to complete my already overdue assignment and then
+        past Lilith happened. I say \u201Cpast\u201D because she\u2019s obviously
+        dead and also, just, agh, fuck Facebook and fuck being 17. I didn\u2019t understand
+        enough about my life back then to look the way I feel now.My face is uncomfortably
+        honest, making sure everything I feel is there for anyone to see "
+      animationCurve:
+        serializedVersion: 2
+        m_Curve:
+        - serializedVersion: 2
+          time: 0
+          value: 0
+          inSlope: 2
+          outSlope: 2
+          tangentMode: 0
+        - serializedVersion: 2
+          time: 0.49577245
+          value: 1.0067406
+          inSlope: 0.14222813
+          outSlope: 0.14222813
           tangentMode: 0
         - serializedVersion: 2
           time: 1
@@ -203,10 +227,10 @@ MonoBehaviour:
           outSlope: 2
           tangentMode: 0
         - serializedVersion: 2
-          time: 0.4976487
-          value: 1.0008779
-          inSlope: 0.0662709
-          outSlope: 0.0662709
+          time: 0.49646872
+          value: 1.0087097
+          inSlope: -0.20850648
+          outSlope: -0.20850648
           tangentMode: 0
         - serializedVersion: 2
           time: 1
@@ -217,7 +241,7 @@ MonoBehaviour:
         m_PreInfinity: 2
         m_PostInfinity: 2
         m_RotationOrder: 0
-    - subtitle: '[whispers] worthless, worthless, worth less'
+    - subtitle: '*whispers* worthless, worthless, worth less'
       animationCurve:
         serializedVersion: 2
         m_Curve:
@@ -228,10 +252,10 @@ MonoBehaviour:
           outSlope: 2
           tangentMode: 0
         - serializedVersion: 2
-          time: 0.4976487
-          value: 1.0008779
-          inSlope: 0.0662709
-          outSlope: 0.0662709
+          time: 0.49587104
+          value: 1.0003686
+          inSlope: 0.22598082
+          outSlope: 0.22598082
           tangentMode: 0
         - serializedVersion: 2
           time: 1
@@ -253,10 +277,10 @@ MonoBehaviour:
           outSlope: 2
           tangentMode: 0
         - serializedVersion: 2
-          time: 0.4976487
-          value: 1.0008779
-          inSlope: 0.0662709
-          outSlope: 0.0662709
+          time: 0.49946725
+          value: 1.0212097
+          inSlope: -0.11891087
+          outSlope: -0.11891087
           tangentMode: 0
         - serializedVersion: 2
           time: 1
@@ -297,7 +321,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 50
   m_TargetDisplay: 0
 --- !u!224 &224129656528173342
 RectTransform:
@@ -334,5 +358,5 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -80, y: 174.26}
+  m_SizeDelta: {x: -80, y: 410.1}
   m_Pivot: {x: 0.5, y: 0}

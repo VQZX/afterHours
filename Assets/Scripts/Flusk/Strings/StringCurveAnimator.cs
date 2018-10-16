@@ -15,6 +15,7 @@ using UnityEngine;
          {
              Curve = curve;
              TotalTime = curve.FinalTime();
+             timer = new Timer(TotalTime / speed, OnComplete, OnUpdate);
              CurrentTime = curve.FirstTime();
              min = curve.Min();
              max = curve.Max();

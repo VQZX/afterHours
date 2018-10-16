@@ -12,46 +12,52 @@ namespace Flusk.Subtitles
 
         [SerializeField]
         protected AnimationCurve animationCurve;
+
+        private bool complete;
+        private bool clean;
         
-        private string[] sentences;
-        private int currentSentence = 0;
         private StringCurveAnimator stringAnimator;
+
+        private Timer timer;
         
-        public bool isMultiSubtitle { get; private set; }
-
-        private const char SPLITTER = '.';
-
         public Subtitle(string subtitle, AnimationCurve curve)
         {
             this.subtitle = subtitle;
             animationCurve = curve;
             Initialize();
+            clean = false;
+            complete = false;
         }
 
         public void Initialize()
         {
-            sentences = subtitle.Split(SPLITTER);
-            isMultiSubtitle = sentences.Length > 1;
-            stringAnimator = new StringCurveAnimator(sentences[currentSentence], animationCurve);
-            if (isMultiSubtitle)
-            {
-                stringAnimator.Complete = OnComplete;
-            }    
+            stringAnimator = new StringCurveAnimator(subtitle, animationCurve);
+            stringAnimator.Complete += OnComplete;
+            timer = new Timer(1, Clean);
         }
 
         public string Render()
         {
-            return stringAnimator.GetCurrent();
+            if (complete)
+            {
+                timer.Tick(Time.deltaTime);
+            }
+
+            if (clean)
+            {
+                return String.Empty;
+            }
+            return stringAnimator.CurrentText;
         }
 
         private void OnComplete()
         {
-            currentSentence++;
-            if (currentSentence >= sentences.Length)
-            {
-                return;
-            }
-            stringAnimator = new StringCurveAnimator(sentences[currentSentence], animationCurve);
+            complete = true;
+        }
+
+        private void Clean()
+        {
+            clean = true;
         }
     }
 }
