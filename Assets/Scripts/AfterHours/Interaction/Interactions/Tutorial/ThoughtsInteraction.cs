@@ -21,11 +21,11 @@ namespace AfterHours.Interaction.Interactions.Tutorial
         [SerializeField]
         protected HateYourself[] hateYourself;
 
-        [SerializeField] 
-        protected Canvas screenBounds;
-
         [SerializeField]
         protected RectTransform[] screenAreas;
+
+        [SerializeField]
+        protected RectTransform screenBounds;
 
         [SerializeField]
         protected float animationDelay = 0.5f;
@@ -38,7 +38,7 @@ namespace AfterHours.Interaction.Interactions.Tutorial
 
         private List<FilledRectTransform> placementAreas;
 
-        private int hateButtonsPressed = 0;
+        private int hateButtonsPressed;
 
         public void HateThoughts()
         {
@@ -51,18 +51,7 @@ namespace AfterHours.Interaction.Interactions.Tutorial
 
         public void MoveThought(ThoughtButton button)
         {
-            FilledRectTransform selected = default(FilledRectTransform);
-            while (selected.ContainerRectTransform == null)
-            {
-                var current = placementAreas[Random.Range(0, placementAreas.Count)];
-                if (current.Amount < 100 )
-                {
-                    selected = current;
-                    selected.Add(button.RectTransform);
-                }
-            }
-
-            Vector2 position = selected.ContainerRectTransform.RandomPoint();
+            Vector2 position = screenBounds.RandomPoint();
             button.RectTransform.anchoredPosition = position;
             button.RectTransform.localEulerAngles = Vector3.forward * Random.Range(minRotation, maxRotation);
             button.ScaleTween.Activate();

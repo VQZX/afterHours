@@ -7,6 +7,8 @@ namespace Flusk.Strings
     [Serializable]
     public class StringAnimator
     {
+        protected float speed = 0.2f;
+        
         public string Text { get; protected set; }
         public string CurrentText { get; protected set; }
         
@@ -23,7 +25,7 @@ namespace Flusk.Strings
         {
             Text = text;
             CurrentText = string.Empty;
-            timer = new Timer(time, OnComplete, OnUpdate);
+            timer = new Timer(time / speed, OnComplete, OnUpdate);
             TotalTime = time;
             charLength = Text.Length;
         }

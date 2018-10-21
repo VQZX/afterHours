@@ -41,7 +41,8 @@ namespace AfterHours.Conversation
             if (currentCycles >= elipsisCycles)
             {
                 animatedElipsis.gameObject.SetActive(false);
-                content.Play(statement.Content, statement.Curve);
+                //content.Play(statement.Content, statement.Curve);
+                content.InstantPlay(statement.Content, statement.Curve);
             }
         }
     }
