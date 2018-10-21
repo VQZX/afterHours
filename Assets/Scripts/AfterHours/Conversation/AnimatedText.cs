@@ -73,6 +73,16 @@ namespace AfterHours.Conversation
             Play();
         }
 
+        public void InstantPlay(string playText, AnimationCurve curve)
+        {
+            speedCurve = curve;
+            text = playText;
+            uiText.gameObject.SetActive(true);
+            uiText.text = playText;
+            TotalTime = text.Length * timePerCharacter;
+            textTimer = new Timer(TotalTime, TimerComplete);
+        }
+
         private void Play()
         {
             uiText.text = string.Empty;
