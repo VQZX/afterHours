@@ -15,19 +15,17 @@ namespace AfterHours.Conversation.Editor
 
         public override void OnInspectorGUI()
         {
-            base.OnInspectorGUI();
             if (statement == null)
             {
                 statement = (Statement) target;
             }
             
-            isEditingStatement = EditorGUILayout.Toggle("Edit Statement", isEditingStatement);
+            isEditingStatement = GUILayout.Button("Edit Statement");
             isEditingOptions = EditorGUILayout.Toggle("Edit Options", isEditingOptions);
 
             if (isEditingStatement)
             {
-                statement.SetStatementMeasurements( statement.SpeechBubble );
-                
+                statement.SetStatementMeasurements( statement.SpeechBubble );   
             }
 
             if (isEditingOptions)
@@ -44,6 +42,7 @@ namespace AfterHours.Conversation.Editor
             {
                 statement.SetOptionsRect();
             }
+            base.OnInspectorGUI();
             
         }
 
