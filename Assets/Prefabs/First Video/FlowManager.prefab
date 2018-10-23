@@ -684,7 +684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1224920172714510
 GameObject:
   m_ObjectHideFlags: 1
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 114622407269946964}
   - component: {fileID: 114928159982424984}
   m_Layer: 5
-  m_Name: "I said I\u2019m fine "
+  m_Name: "I said I\u2019m  fine "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2542,7 +2542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1783702136002244
 GameObject:
   m_ObjectHideFlags: 1
@@ -4130,7 +4130,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "you're an \nunsupportive friend \nand idgaf about this date "
+  m_Text: "You\u2019re a shit friend and \nI don\u2019t give \na fuck about this date"
 --- !u!114 &114013868541013020
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6634,8 +6634,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "When was I supposed \nto address it? \nYou were too busy \nbeing helpful
-    to \neveryone else but me."
+  m_Text: "I said I\u2019m  fine "
 --- !u!114 &114272510750206336
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8797,8 +8796,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   measurements:
-    AnchoredPosition: {x: 452.4, y: 617.3}
-    SizeDelta: {x: 741.1, y: 431}
+    AnchoredPosition: {x: 445.9, y: 682.4}
+    SizeDelta: {x: 662.6, y: 400.3}
   optionMeasurements:
     AnchoredPosition: {x: 0, y: 0}
     SizeDelta: {x: 0, y: 0}
@@ -9247,7 +9246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "I love you too. \nYou're my bear"
+  m_Text: "Why did you take \nso long to reply."
 --- !u!114 &114589607968753580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9727,7 +9726,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: "I said I\u2019m fine "
+  content: "I said I\u2019m  fine "
   mode: 0
   responses: []
   curve:
@@ -9755,8 +9754,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   measurements:
-    AnchoredPosition: {x: 442.6, y: 483}
-    SizeDelta: {x: 569.3, y: 417}
+    AnchoredPosition: {x: 465.1, y: 513.9}
+    SizeDelta: {x: 614.3, y: 355.1}
   optionMeasurements:
     AnchoredPosition: {x: -615, y: -172}
     SizeDelta: {x: 511, y: 271}
@@ -16301,8 +16300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1565, y: 705.4}
-  m_SizeDelta: {x: 648, y: 296.4}
+  m_AnchoredPosition: {x: 1583, y: 574.2}
+  m_SizeDelta: {x: 535.1, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224463734493990882
 RectTransform:
@@ -16393,8 +16392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 396, y: 682.4}
-  m_SizeDelta: {x: 562.7, y: 400.3}
+  m_AnchoredPosition: {x: 445.9, y: 682.4}
+  m_SizeDelta: {x: 662.6, y: 400.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224472753500574712
 RectTransform:
@@ -17465,8 +17464,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 493.2, y: 536.5}
-  m_SizeDelta: {x: 670.5, y: 1009.6}
+  m_AnchoredPosition: {x: 465.1, y: 513.9}
+  m_SizeDelta: {x: 614.3, y: 355.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224804447415253348
 RectTransform:
