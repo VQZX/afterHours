@@ -42,6 +42,9 @@ namespace AfterHours.Conversation.Editor
             {
                 statement.SetOptionsRect();
             }
+            
+            EditorUtility.SetDirty(target);
+            
             base.OnInspectorGUI();
             
         }
