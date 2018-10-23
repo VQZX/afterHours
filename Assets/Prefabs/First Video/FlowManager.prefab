@@ -787,7 +787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1261883392282612
 GameObject:
   m_ObjectHideFlags: 1
@@ -909,8 +909,7 @@ GameObject:
   - component: {fileID: 224211176771591530}
   - component: {fileID: 114779804572308896}
   m_Layer: 5
-  m_Name: 'MESSAGE FROM JAMES:  wassup beautiful ;)  have you seen the  new rick and
-    morty?'
+  m_Name: wassup beautiful ;)  have you seen the  new rick and morty?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4263,6 +4262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: Acting like what
   mode: 0
   responses:
@@ -4277,20 +4278,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 407, y: 433}
     SizeDelta: {x: 585, y: 179}
@@ -4474,6 +4475,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: My mom called.
   mode: 1
   responses:
@@ -4582,9 +4585,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114389696208836016}
-        m_MethodName: Hide
-        m_Mode: 1
+      - m_Target: {fileID: 1369773177136086}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1200811867721470}
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4630,6 +4644,9 @@ MonoBehaviour:
   animatedElipsis: {fileID: 1644427467877510}
   elipsisCount: 0
   takeDimensions: 1
+  image: {fileID: 114360032727893662}
+  container: {fileID: 11400000, guid: 9d175e9861855d743a6b67e7da0448da, type: 2}
+  smallContainer: {fileID: 11400000, guid: 113069ab38cb7234ba8c1d8b66a253fc, type: 2}
   elipsisCycles: 0
 --- !u!114 &114039433882973168
 MonoBehaviour:
@@ -4875,6 +4892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "My mother is on \nthe phone with \nthat \ndick/doos/cunt \nagain. \nI'm
     pretty sure\nthey're gonna \nget married. "
   mode: 0
@@ -4890,20 +4909,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.09940812
-      value: 0.96898514
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 380, y: 530.8}
     SizeDelta: {x: 645, y: 984}
@@ -4937,6 +4956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Lilith, if you were \nfeeling \nlike this earlier \nwhy didn't you \nsay
     something?"
   mode: 1
@@ -4948,13 +4969,13 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 2
-      outSlope: 2
+      value: 0.9526741
+      inSlope: 0.14867483
+      outSlope: 0.14867483
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.033333335
     - serializedVersion: 3
       time: 1
       value: 1
@@ -5000,6 +5021,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "When was I supposed \nto address it? \nYou were too busy \nbeing helpful
     to \neveryone else but me."
   mode: 0
@@ -5010,21 +5033,21 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2
-      outSlope: 2
+      inSlope: 1
+      outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 1
+      outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -5061,6 +5084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I could see that you \nweren't okay and \nthat's why I'm \nasking you
     now. \nI was helping them \npack up and I just \ngot home and as \nsoon as I did,
     \nI messaged you. "
@@ -5288,6 +5313,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Please just consider \nour feelings. \nRemember what you \nlearnt about
     being \nmindful?"
   mode: 1
@@ -5457,6 +5484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 1
+  useSmall: 0
   content: Fuxk me too
   mode: 1
   responses:
@@ -5628,6 +5657,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "What?? Why are \nyou acting \nlike this"
   mode: 1
   responses:
@@ -5689,6 +5720,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: have fun
   mode: 0
   responses: []
@@ -5702,20 +5735,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 222.1, y: 595}
     SizeDelta: {x: 329.2, y: 205}
@@ -5772,6 +5805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: yeah <3
   mode: 0
   responses:
@@ -5786,17 +5821,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -5887,6 +5922,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: 'I hate boys '
   mode: 0
   responses:
@@ -5901,20 +5938,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 313.5, y: 457}
     SizeDelta: {x: 512.1, y: 191.4}
@@ -5996,6 +6033,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "You won't even address \nwhat I just said about \nyou not seeing me. \nYou
     just skate \nover it."
   mode: 0
@@ -6006,21 +6045,21 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2
-      outSlope: 2
+      inSlope: 1
+      outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 1
+      outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -6186,7 +6225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16300823, g: 0.33088237, b: 0.22023803, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6212,6 +6251,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: I'm sorry
   mode: 0
   responses:
@@ -6226,20 +6267,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 452.4, y: 596}
     SizeDelta: {x: 400, y: 215.7}
@@ -6314,6 +6355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I will. I'm sorry again. \nI love you so much. "
   mode: 0
   responses:
@@ -6490,6 +6533,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Lilith...what did we \nspeak about about \nbullying yourself?"
   mode: 1
   responses:
@@ -6658,15 +6703,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7372549, g: 0.101960786, b: 0.32156864, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 938c327440a34334192ada8c3356141b, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 6f7f15ca4ee9fdf4096dd0ab588ffa1b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6684,6 +6729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "you're an \nunsupportive friend \nand idgaf about this date "
   mode: 0
   responses: []
@@ -6697,20 +6744,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 0, y: 0}
     SizeDelta: {x: 0, y: 0}
@@ -6834,6 +6881,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: I love you, too xx
   mode: 0
   responses: []
@@ -6847,17 +6896,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -6894,6 +6943,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Okay baby. Is it okay \nif I go and make \nsome supper now?"
   mode: 1
   responses:
@@ -7203,6 +7254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Are you okay?\nYou've been \nacting kinda cold."
   mode: 1
   responses:
@@ -7211,23 +7264,23 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
+      time: -0.0041656494
+      value: 0.94999695
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
-      inSlope: 1
-      outSlope: 1
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -7279,6 +7332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I can't always tell \nwhen I'm being shit...\nand even when \nI can...I
     can't stop."
   mode: 0
@@ -7294,17 +7349,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -7430,6 +7485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Please just consider\nmy feelings. \nRemember what you \nlearnt about
     being \nmindful?"
   mode: 1
@@ -7521,7 +7578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16300823, g: 0.33088237, b: 0.22023803, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7591,6 +7648,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I could see that you \nweren't okay and \nthat's why I'm \nasking you
     now. \nI was helping them \npack up and I just \ngot home and as \nsoon as I did,
     \nI messaged you. "
@@ -7685,6 +7744,9 @@ MonoBehaviour:
   animatedElipsis: {fileID: 1193453993474264}
   elipsisCount: 0
   takeDimensions: 1
+  image: {fileID: 114914954262443374}
+  container: {fileID: 11400000, guid: 9d175e9861855d743a6b67e7da0448da, type: 2}
+  smallContainer: {fileID: 11400000, guid: 113069ab38cb7234ba8c1d8b66a253fc, type: 2}
   elipsisCycles: 3
 --- !u!114 &114387285207741242
 MonoBehaviour:
@@ -7911,6 +7973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 1
+  useSmall: 0
   content: "I'm going out \nwith Tank tonight."
   mode: 1
   responses:
@@ -8005,6 +8069,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: 'So you''re not
 
     fine, then.'
@@ -8017,21 +8083,21 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 1
-      outSlope: 1
+      value: 0.95
+      inSlope: 0.5281957
+      outSlope: 0.5281957
       tangentMode: 0
       weightedMode: 0
       inWeight: 0.33333334
-      outWeight: 0.33333334
+      outWeight: 0.033247393
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
-      inSlope: 1
-      outSlope: 1
+      time: 0.18939209
+      value: 0.9991646
+      inSlope: 0.51875615
+      outSlope: 0.51875615
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
+      inWeight: 0.03928878
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -8109,6 +8175,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I\u2019m sorry. I think \nI need to just think \nabout this feeling \nthat
     I'm\nexperiencing a \nbit more, before \nI can talk about it"
   mode: 0
@@ -8124,17 +8192,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -8198,6 +8266,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I will. I'm sorry again. I love you so \nmuch. I think I need to just
     think \nabout this feeling that\nI'm experiencing a bit \nmore, because \nI need
     to understand \nit before I explain it. Okay?"
@@ -8214,17 +8284,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -8505,6 +8575,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Use a condom\n this time"
   mode: 0
   responses: []
@@ -8518,20 +8590,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: -641.5, y: 322}
     SizeDelta: {x: 468.5, y: 261.8}
@@ -8694,6 +8766,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Why did you take \nso long to reply."
   mode: 0
   responses:
@@ -8704,42 +8778,24 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: -0.26054686
-      outSlope: -0.26054686
+      inSlope: 1
+      outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.22930877
-      value: 0.014976501
-      inSlope: 0.18179286
-      outSlope: 2.4677813
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.4987983
-      value: 0.9943013
-      inSlope: 0.9998679
-      outSlope: 0.07410028
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0.036311615
+      inSlope: 1
       outSlope: 1
-      tangentMode: 1
+      tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 452.4, y: 596}
     SizeDelta: {x: 741.1, y: 388.4}
@@ -8773,6 +8829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: I'm   fine
   mode: 0
   responses:
@@ -8783,30 +8841,21 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2
-      outSlope: 2
+      inSlope: 1
+      outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 0.48600262
-      value: 0.9818038
-      inSlope: 0.21056062
-      outSlope: 0.21056062
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
       time: 1
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: 1
+      outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -8879,6 +8928,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: It's spelt MUM
   mode: 0
   responses:
@@ -8893,17 +8944,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -9050,6 +9101,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: ' I love you, okay?'
   mode: 1
   responses:
@@ -9206,6 +9259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I\u2019m sorry that \nyou\u2019re feeling like \nthis. \nJust don\u2019t
     shut \nme out, okay? "
   mode: 1
@@ -9670,6 +9725,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: 'Well, I said I''m fine.
 
     So I must be.'
@@ -9685,17 +9742,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -9806,6 +9863,9 @@ MonoBehaviour:
   animatedElipsis: {fileID: 1383342341166562}
   elipsisCount: 0
   takeDimensions: 1
+  image: {fileID: 114217158465418640}
+  container: {fileID: 11400000, guid: 9d175e9861855d743a6b67e7da0448da, type: 2}
+  smallContainer: {fileID: 11400000, guid: 113069ab38cb7234ba8c1d8b66a253fc, type: 2}
   elipsisCycles: 3
 --- !u!114 &114638294670360056
 MonoBehaviour:
@@ -9859,7 +9919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16300823, g: 0.33088237, b: 0.22023803, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10204,6 +10264,9 @@ MonoBehaviour:
   animatedElipsis: {fileID: 1724420606566700}
   elipsisCount: 0
   takeDimensions: 1
+  image: {fileID: 114642681690762552}
+  container: {fileID: 11400000, guid: 9d175e9861855d743a6b67e7da0448da, type: 2}
+  smallContainer: {fileID: 11400000, guid: 113069ab38cb7234ba8c1d8b66a253fc, type: 2}
   elipsisCycles: 3
 --- !u!114 &114663423819458298
 MonoBehaviour:
@@ -10384,6 +10447,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 1
+  useSmall: 0
   content: Oh fuxk
   mode: 1
   responses:
@@ -10490,6 +10555,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: I love you <3
   mode: 1
   responses:
@@ -10618,6 +10685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: Okay <3
   mode: 0
   responses:
@@ -10632,17 +10701,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -10729,6 +10798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "It just feels like I'm \nso alone in \neverything. I'm  sorry."
   mode: 0
   responses:
@@ -10743,17 +10814,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -10856,6 +10927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Okay...It just feels \nlike I'm  so alone \nin  everything. \nI'm  sorry."
   mode: 0
   responses:
@@ -10870,20 +10943,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 407, y: 507}
     SizeDelta: {x: 585, y: 522.5}
@@ -11113,6 +11186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "Is that the guy \nyou met at your \nwork function?"
   mode: 0
   responses:
@@ -11127,20 +11202,20 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 0
+    m_RotationOrder: 4
   measurements:
     AnchoredPosition: {x: 380, y: 464}
     SizeDelta: {x: 645, y: 466}
@@ -11201,8 +11276,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  content: "MESSAGE FROM\nJAMES:\n\nwassup beautiful ;) \nhave you seen the \nnew
-    rick and morty?"
+  npc: 2
+  useSmall: 0
+  content: "wassup beautiful ;) \nhave you seen the \nnew rick and morty?"
   mode: 1
   responses: []
   curve:
@@ -11557,6 +11633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 1
+  useSmall: 0
   content: Yeah :D
   mode: 1
   responses:
@@ -11795,6 +11873,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I love you too. \nYou're my bear"
   mode: 0
   responses: []
@@ -11808,17 +11888,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -12537,7 +12617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16300823, g: 0.33088237, b: 0.22023803, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12587,6 +12667,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I feel realy ugly and shit...\nIf you paid any attention to \nme today,
     you would know."
   mode: 0
@@ -12602,17 +12684,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -12660,6 +12742,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I can't always tell \nwhen I'm being shit...\nand even when \nI can...I
     can't stop."
   mode: 0
@@ -12675,17 +12759,17 @@ MonoBehaviour:
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     - serializedVersion: 3
-      time: 0.18890381
-      value: 0.98125076
+      time: 1
+      value: 1
       inSlope: 1
       outSlope: 1
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
@@ -12904,15 +12988,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16300823, g: 0.33088237, b: 0.22023803, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4aebce9bc1c871a4584095aae98f8a79, type: 3}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1b58cf7f419d5694fbf1987448f551c5, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -13112,6 +13196,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "You said you \nwouldn't do \nthis anymore"
   mode: 1
   responses:
@@ -14296,7 +14382,7 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1335570972245446}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
@@ -14753,7 +14839,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224029126020853548
@@ -14793,7 +14879,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000030517578, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224038408768685702
@@ -15674,7 +15760,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00024414062, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224321125693169060
@@ -15714,7 +15800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224322841082560490
@@ -15899,7 +15985,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000045776367}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224379737361613390
@@ -16235,7 +16321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224464624506708708
@@ -16441,7 +16527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000061034418, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224516913911238038
@@ -16518,7 +16604,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224529802525282486
@@ -16612,7 +16698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1277, y: 100.2}
+  m_AnchoredPosition: {x: 1277, y: 100.200195}
   m_SizeDelta: {x: 543, y: 614.8}
   m_Pivot: {x: 0, y: 0}
 --- !u!224 &224555925881395188
@@ -16633,7 +16719,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: -0.000030517578}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224557264618792556
@@ -17014,7 +17100,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224680945683483528
@@ -17131,7 +17217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00018310547, y: -0.000091552734}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224708972218027244
@@ -17207,7 +17293,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224759980161349862
@@ -17436,7 +17522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000015258789}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224814530711126488
@@ -17837,7 +17923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.00012207031, y: -0.000061035156}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224924089432507418
@@ -17948,7 +18034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0000000014770194, y: 332}
+  m_AnchoredPosition: {x: 0, y: 332}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224989911877289482

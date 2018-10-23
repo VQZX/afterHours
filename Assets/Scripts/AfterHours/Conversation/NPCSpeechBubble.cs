@@ -1,9 +1,29 @@
-﻿using UnityEngine;
+﻿using System;
+using AfterHours.Beta;
+using UnityEngine;
+using UnityEngine.UI;
 
 namespace AfterHours.Conversation
 {
     public class NPCSpeechBubble : SpeechBubble
     {
+        [Serializable]
+        public struct BubbleSelection
+        {
+            public Statement.NPC Npc;
+            public Sprite Bubble;
+            public Sprite NameTag;
+        }
+
+        [SerializeField]
+        protected Image image;
+
+        [SerializeField]
+        protected SpeechBubbleContainer container;
+
+        [SerializeField]
+        protected SpeechBubbleContainer smallContainer;
+        
         [SerializeField]
         protected int elipsisCycles = 3;
         
@@ -26,8 +46,12 @@ namespace AfterHours.Conversation
         {
             this.manager = manager;
             this.statement = statement;
+
+            image.sprite = statement.UseSmall ? 
+                smallContainer[statement.Npc] : 
+                container[statement.Npc];
             
-            // adjust size
+            // Adjust size
             rectTransform.anchoredPosition = statement.Measurements.AnchoredPosition;
             rectTransform.sizeDelta = statement.Measurements.SizeDelta;
             
@@ -45,5 +69,12 @@ namespace AfterHours.Conversation
                 content.InstantPlay(statement.Content, statement.Curve);
             }
         }
+        
+        #if UNITY_EDITOR
+        private void OnValidate()
+        {
+            image = GetComponent<Image>();
+        }
+#endif
     }
 }

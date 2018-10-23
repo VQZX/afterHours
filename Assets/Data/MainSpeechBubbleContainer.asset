@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f81885a5c5894b47bdd85fd59f04a329, type: 3}
+  m_Name: MainSpeechBubbleContainer
+  m_EditorClassIdentifier: 
+  speechBubbleSelection:
+  - Npc: 0
+    Bubble: {fileID: 21300000, guid: 1b58cf7f419d5694fbf1987448f551c5, type: 3}
+    NameTag: {fileID: 21300000, guid: cd82785b28359f844b60cc5455a7223c, type: 3}
+  - Npc: 1
+    Bubble: {fileID: 21300000, guid: 1b58cf7f419d5694fbf1987448f551c5, type: 3}
+    NameTag: {fileID: 21300000, guid: bfa3dce8ccdb9254a8917a5ddb196929, type: 3}
+  - Npc: 2
+    Bubble: {fileID: 0}
+    NameTag: {fileID: 21300000, guid: bdcbda1eb756c6a4498eb3425a34ded9, type: 3}

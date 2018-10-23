@@ -4210,6 +4210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: 'Bullshit, you fuckin
 
     miss me'
@@ -5082,6 +5084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: 'LOL '
   mode: 2
   responses:
@@ -5194,6 +5198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "And I can feel your heartbeat \nyou know exactly where \nto take me\r"
   mode: 2
   responses:
@@ -6056,6 +6062,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I still listen to \nSeventeen Forever"
   mode: 2
   responses:
@@ -7399,6 +7407,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "You should come \nover and we can watch \nthe rest together. You need
     \nto loosen up a bit Lil. \r\n"
   mode: 2
@@ -7819,6 +7829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "I know you \nknow how to "
   mode: 2
   responses:
@@ -10126,6 +10138,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 863215501c4f4f70846da9984019b20c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  npc: 0
+  useSmall: 0
   content: "\u26A0 Johannesburg- The man accused of the kidnapping, rape and \nmurder
     of six-year-old Michaela Gamaroodien was found guilty\nin the Johannesburg High
     Court on Wednesday, the SABC\nreported.\r..\n"

@@ -760,7 +760,7 @@ Prefab:
     - target: {fileID: 114704327095183690, guid: bed58a5a6c83461458d0af3ef957968f,
         type: 2}
       propertyPath: usePlaybackPoint
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114819211450952386, guid: bed58a5a6c83461458d0af3ef957968f,
         type: 2}

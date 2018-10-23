@@ -17,6 +17,17 @@ namespace AfterHours.Conversation
             SoundEffect
         }
 
+        public enum NPC
+        {
+            Holden,
+            
+            Maryam,
+            
+            James,
+            
+            Nothing
+        }
+
         [Serializable]
         public struct SpeechBubbleMeasurements
         {
@@ -35,6 +46,22 @@ namespace AfterHours.Conversation
             {
             }
         }
+
+        [SerializeField]
+        protected NPC npc;
+        public NPC Npc
+        {
+            get { return npc; }
+        }
+
+        [SerializeField]
+        protected bool useSmall;
+        public bool UseSmall
+        {
+            get { return useSmall; }
+        }
+
+        
         
         [Multiline(10),SerializeField]
         protected string content;
