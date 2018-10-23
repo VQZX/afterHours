@@ -19,6 +19,9 @@ namespace AfterHours.Conversation
         protected Image image;
 
         [SerializeField]
+        protected Image title;
+
+        [SerializeField]
         protected SpeechBubbleContainer container;
 
         [SerializeField]
