@@ -211,27 +211,6 @@ Prefab:
       propertyPath: videoHelper
       value: 
       objectReference: {fileID: 1003711342}
-    - target: {fileID: 1771375173029170, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1860494806591434, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1962746223845654, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1316657409783728, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 223842074128107506, guid: 226d475a11c325b46bf4fd978ac1f5b7,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
   m_IsPrefabAsset: 0

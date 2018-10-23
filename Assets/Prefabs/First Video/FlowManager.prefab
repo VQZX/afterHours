@@ -174,8 +174,8 @@ GameObject:
   - component: {fileID: 114932534169900562}
   - component: {fileID: 114807810503004604}
   m_Layer: 5
-  m_Name: I feel realy ugly and shit... If you paid any attention to  me today, you
-    would know.
+  m_Name: I feel like shit, Holden.  If you paid some attention to me today, you would
+    know.
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -239,7 +239,7 @@ GameObject:
   - component: {fileID: 224180345003551922}
   - component: {fileID: 114140996847162496}
   m_Layer: 5
-  m_Name: yeah <3
+  m_Name: Yeah <3. I love you
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -730,7 +730,7 @@ GameObject:
   - component: {fileID: 114622407269946964}
   - component: {fileID: 114928159982424984}
   m_Layer: 5
-  m_Name: Well, I said I'm fine. So I must be.
+  m_Name: "I said I\u2019m fine "
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1162,8 +1162,8 @@ GameObject:
   - component: {fileID: 224529802525282486}
   - component: {fileID: 114067611883110674}
   m_Layer: 5
-  m_Name: 'My mother is on  the phone with  that  dick/doos/cunt  again.  I''m pretty
-    sure they''re gonna  get married. '
+  m_Name: "My mother is on the phone  with that pig again.  I\u2019m pretty sure  they\u2019re
+    gonna  get married..."
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1393,9 +1393,8 @@ GameObject:
   - component: {fileID: 224689697709313170}
   - component: {fileID: 114371341496012488}
   m_Layer: 5
-  m_Name: 'I could see that you  weren''t okay and  that''s why I''m  asking you now.  I
-    was helping them  pack up and I just  got home and as  soon as I did,  I messaged
-    you. '
+  m_Name: "I\u2019m really sorry  you feel bad, Lilith.  I messaged you  as soon as
+    I  could.  Today was such  a hectic day"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1430,7 +1429,7 @@ GameObject:
   - component: {fileID: 224014904394023526}
   - component: {fileID: 114279869394552592}
   m_Layer: 5
-  m_Name: 'you''re an  unsupportive friend  and idgaf about this date '
+  m_Name: "You\u2019re a shit  friend and  I don\u2019t give  a fuck about this date"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1549,7 +1548,8 @@ GameObject:
   - component: {fileID: 224881213708570918}
   - component: {fileID: 114289228888258586}
   m_Layer: 5
-  m_Name: Okay baby. Is it okay  if I go and make  some supper now?
+  m_Name: I love you so much too.  Is it ok if I go and take a  shower quickly and  then
+    we can speak  about things some more?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2007,7 +2007,7 @@ GameObject:
   - component: {fileID: 224180833330014232}
   - component: {fileID: 114220049024964988}
   m_Layer: 5
-  m_Name: I'm sorry
+  m_Name: Yeah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2542,7 +2542,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1783702136002244
 GameObject:
   m_ObjectHideFlags: 1
@@ -2618,7 +2618,7 @@ GameObject:
   - component: {fileID: 224228768629804338}
   - component: {fileID: 114565872933524512}
   m_Layer: 5
-  m_Name: ' I love you, okay?'
+  m_Name: I love you too, Lilliputian
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4894,8 +4894,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: "My mother is on \nthe phone with \nthat \ndick/doos/cunt \nagain. \nI'm
-    pretty sure\nthey're gonna \nget married. "
+  content: "My mother is on the phone \nwith that pig again. \nI\u2019m pretty sure
+    \nthey\u2019re gonna \nget married..."
   mode: 0
   responses:
   - {fileID: 114695645045680866}
@@ -5807,7 +5807,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: yeah <3
+  content: Yeah <3. I love you
   mode: 0
   responses:
   - {fileID: 114565872933524512}
@@ -6253,7 +6253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: I'm sorry
+  content: Yeah
   mode: 0
   responses:
   - {fileID: 114371341496012488}
@@ -6730,7 +6730,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: "you're an \nunsupportive friend \nand idgaf about this date "
+  content: "You\u2019re a shit \nfriend and \nI don\u2019t give \na fuck about this
+    date"
   mode: 0
   responses: []
   curve:
@@ -6944,7 +6945,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: "Okay baby. Is it okay \nif I go and make \nsome supper now?"
+  content: "I love you so much too. \nIs it ok if I go and take a \nshower quickly
+    and \nthen we can speak \nabout things some more?"
   mode: 1
   responses:
   - {fileID: 114140996847162496}
@@ -7649,9 +7651,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: "I could see that you \nweren't okay and \nthat's why I'm \nasking you
-    now. \nI was helping them \npack up and I just \ngot home and as \nsoon as I did,
-    \nI messaged you. "
+  content: "I\u2019m really sorry \nyou feel bad, Lilith. \nI messaged you \nas soon
+    as I \ncould. \nToday was such \na hectic day"
   mode: 1
   responses:
   - {fileID: 114744790915396726}
@@ -9102,7 +9103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: ' I love you, okay?'
+  content: I love you too, Lilliputian
   mode: 1
   responses:
   - {fileID: 114827366019084520}
@@ -9726,9 +9727,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: 'Well, I said I''m fine.
-
-    So I must be.'
+  content: "I said I\u2019m fine "
   mode: 0
   responses: []
   curve:
@@ -12668,8 +12667,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   npc: 0
   useSmall: 0
-  content: "I feel realy ugly and shit...\nIf you paid any attention to \nme today,
-    you would know."
+  content: "I feel like shit, Holden. \nIf you paid some attention to me today, you
+    would know."
   mode: 0
   responses:
   - {fileID: 114072093120223368}
@@ -14581,7 +14580,7 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316657409783728}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 0}
