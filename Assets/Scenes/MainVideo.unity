@@ -986,6 +986,16 @@ Prefab:
       propertyPath: m_Name
       value: FlowManager - Part 1
       objectReference: {fileID: 0}
+    - target: {fileID: 223433496826621298, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223189440027441218, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
   m_IsPrefabAsset: 0
