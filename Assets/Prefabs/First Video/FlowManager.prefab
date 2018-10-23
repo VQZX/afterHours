@@ -5836,8 +5836,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   measurements:
-    AnchoredPosition: {x: 468.2, y: 578}
-    SizeDelta: {x: 404, y: 273.1}
+    AnchoredPosition: {x: 603.8, y: 578}
+    SizeDelta: {x: 675.1, y: 273.1}
   optionMeasurements:
     AnchoredPosition: {x: 0, y: 0}
     SizeDelta: {x: 0, y: 0}
@@ -6974,8 +6974,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   measurements:
-    AnchoredPosition: {x: 1565, y: 656.8}
-    SizeDelta: {x: 648, y: 393.5}
+    AnchoredPosition: {x: 1537, y: 438.4}
+    SizeDelta: {x: 760.2, y: 830.4}
   optionMeasurements:
     AnchoredPosition: {x: 0, y: 0}
     SizeDelta: {x: 0, y: 0}
@@ -7680,8 +7680,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   measurements:
-    AnchoredPosition: {x: 1549.6, y: 501.5}
-    SizeDelta: {x: 678.8, y: 1209.6}
+    AnchoredPosition: {x: 1549.6, y: 596.15}
+    SizeDelta: {x: 678.8, y: 1020.3}
   optionMeasurements:
     AnchoredPosition: {x: 0, y: 0}
     SizeDelta: {x: 0, y: 0}
@@ -9131,8 +9131,8 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 0
   measurements:
-    AnchoredPosition: {x: 1565, y: 705.4}
-    SizeDelta: {x: 648, y: 296.4}
+    AnchoredPosition: {x: 1484.1, y: 705.4}
+    SizeDelta: {x: 810.3, y: 296.4}
   optionMeasurements:
     AnchoredPosition: {x: 0, y: 0}
     SizeDelta: {x: 0, y: 0}
@@ -9246,7 +9246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Why did you take \nso long to reply."
+  m_Text: Yeah <3. I love you
 --- !u!114 &114589607968753580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9437,7 +9437,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: ' I love you, okay?'
+  m_Text: I love you too, Lilliputian
 --- !u!114 &114608852112821530
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16300,8 +16300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1583, y: 574.2}
-  m_SizeDelta: {x: 535.1, y: 512}
+  m_AnchoredPosition: {x: 1484.1, y: 705.4}
+  m_SizeDelta: {x: 810.3, y: 296.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224463734493990882
 RectTransform:
@@ -16392,8 +16392,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 445.9, y: 682.4}
-  m_SizeDelta: {x: 662.6, y: 400.3}
+  m_AnchoredPosition: {x: 603.8, y: 578}
+  m_SizeDelta: {x: 675.1, y: 273.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224472753500574712
 RectTransform:
@@ -17501,7 +17501,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 51.8, y: -63}
+  m_AnchoredPosition: {x: 81, y: -86}
   m_SizeDelta: {x: 431.5, y: 243.96}
   m_Pivot: {x: 0, y: 1}
 --- !u!224 &224809158518488580
