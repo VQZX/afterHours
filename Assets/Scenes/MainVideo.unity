@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playBackPoint: 57
-  usePlaybackPoint: 1
+  usePlaybackPoint: 0
   played:
     m_PersistentCalls:
       m_Calls: []
