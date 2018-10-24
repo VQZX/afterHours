@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace AfterHours.Interaction.Interactions.Tutorial
@@ -8,8 +9,9 @@ namespace AfterHours.Interaction.Interactions.Tutorial
         [SerializeField]
         protected Image[] images;
 
+        [FormerlySerializedAs("button")]
         [SerializeField]
-        protected FacebookGalleryButton button;
+        protected FacebookGalleryButton rightArrow, leftArrow;
 
         [SerializeField] protected GameObject obsessImage;
 
@@ -28,8 +30,10 @@ namespace AfterHours.Interaction.Interactions.Tutorial
        
         protected virtual void Awake()
         {
-            button.SetImages(images);
-            button.SetObsess(obsessImage);
+            rightArrow.SetImages(images);
+            leftArrow.SetImages(images);
+            rightArrow.SetObsess(obsessImage);
+            leftArrow.SetObsess(obsessImage);
         }
     }
 }

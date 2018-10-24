@@ -6,12 +6,26 @@ namespace AfterHours.Interaction.Interactions.Tutorial
 {
     public class FacebookGalleryButton : Button
     {
+        public enum Direction
+        {
+            Right,
+            
+            Left
+        }
+        
         [SerializeField]
-        private Image[] images;
+        protected Image[] images;
+
+        [SerializeField]
+        protected Direction direction;
 
         public GameObject obsessImage { get; protected set; }
 
-        private int clicks;
+        private static int clicks;
+        public static int Clicks
+        {
+            get { return clicks; }
+        }
 
         public void SetImages(Image[] image)
         {
@@ -25,12 +39,13 @@ namespace AfterHours.Interaction.Interactions.Tutorial
         
         public override void OnPointerClick(PointerEventData eventData)
         {
-            clicks++;
-            images[clicks - 1].gameObject.SetActive(false);
-            if (clicks < images.Length)
+            clicks = direction == Direction.Right ? clicks + 1 : clicks -1;
+            if (clicks < 0)
             {
-                images[clicks].gameObject.SetActive(true);
+                clicks = 0;
+                return;
             }
+            SetImageVisible();
 
             // The penultimate click
             if (clicks == images.Length - 2)
@@ -41,6 +56,14 @@ namespace AfterHours.Interaction.Interactions.Tutorial
             if (clicks >= images.Length - 1)
             {
                 base.OnPointerClick(eventData);
+            }
+        }
+
+        private void SetImageVisible()
+        {
+            for (var i = 0; i < images.Length; i++)
+            {
+                images[i].gameObject.SetActive(i == clicks);
             }
         }
     }
