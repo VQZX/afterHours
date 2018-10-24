@@ -317,6 +317,11 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: ce07412feebf8ee4a9ea8bd0a35c93c3,
         type: 3}
+    - target: {fileID: 114510322643183888, guid: 42f2aec5108100e45bb7076bf053616e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42f2aec5108100e45bb7076bf053616e, type: 2}
   m_IsPrefabAsset: 0
@@ -835,12 +840,12 @@ Prefab:
     - target: {fileID: 114704327095183690, guid: bed58a5a6c83461458d0af3ef957968f,
         type: 2}
       propertyPath: playBackPoint
-      value: 122
+      value: 64.0999984741211
       objectReference: {fileID: 0}
     - target: {fileID: 114704327095183690, guid: bed58a5a6c83461458d0af3ef957968f,
         type: 2}
       propertyPath: usePlaybackPoint
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114819211450952386, guid: bed58a5a6c83461458d0af3ef957968f,
         type: 2}
