@@ -56,6 +56,7 @@ namespace AfterHours.Interaction.Interactions.Tutorial
             if (clicks >= images.Length - 1)
             {
                 base.OnPointerClick(eventData);
+                clicks = 0;
             }
         }
 
@@ -65,6 +66,11 @@ namespace AfterHours.Interaction.Interactions.Tutorial
             {
                 images[i].gameObject.SetActive(i == clicks);
             }
+        }
+
+        private void OnEnable()
+        {
+            clicks = 0;
         }
     }
 }

@@ -318,6 +318,7 @@ GameObject:
   - component: {fileID: 1003711341}
   - component: {fileID: 1003711342}
   - component: {fileID: 1003711343}
+  - component: {fileID: 1003711344}
   m_Layer: 0
   m_Name: VideoPlayer - Main
   m_TagString: Untagged
@@ -477,8 +478,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a45628b3571823439a3c062aa6dab79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playBackPoint: 57
-  usePlaybackPoint: 0
+  playBackPoint: 34.400001525878906
+  usePlaybackPoint: 1
   played:
     m_PersistentCalls:
       m_Calls: []
@@ -656,6 +657,19 @@ MonoBehaviour:
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
     ForcePlay: 0
+--- !u!114 &1003711344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1003711338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d34e5a440605e14b926fb5a47102f84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseKey: 112
+  player: {fileID: 1003711339}
 --- !u!114 &1261642250 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114652778290979110, guid: 226d475a11c325b46bf4fd978ac1f5b7,
@@ -895,6 +909,21 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 111945627973881284, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 111169404426764720, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 111473712123527292, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animations.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4999575103556298, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
       propertyPath: m_LocalPosition.x
       value: 365.5
@@ -1030,6 +1059,45 @@ Prefab:
         type: 2}
       propertyPath: m_AnchoredPosition.x
       value: 465.10156
+      objectReference: {fileID: 0}
+    - target: {fileID: 111945627973881284, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 2537c5c5de168e94b80b5f89b6fc7fca, type: 2}
+    - target: {fileID: 111945627973881284, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: cd0b13fb9401e66408ba9648effe4ef6, type: 2}
+    - target: {fileID: 111169404426764720, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: cd0b13fb9401e66408ba9648effe4ef6, type: 2}
+    - target: {fileID: 111169404426764720, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 2537c5c5de168e94b80b5f89b6fc7fca, type: 2}
+    - target: {fileID: 111473712123527292, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: cd0b13fb9401e66408ba9648effe4ef6, type: 2}
+    - target: {fileID: 111473712123527292, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: 2537c5c5de168e94b80b5f89b6fc7fca, type: 2}
+    - target: {fileID: 1853061415066518, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223846122377372374, guid: 226d475a11c325b46bf4fd978ac1f5b7,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 226d475a11c325b46bf4fd978ac1f5b7, type: 2}
